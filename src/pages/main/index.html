@@ -1,0 +1,88 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="/common.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:500,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>Главная</title>
+  </head>
+  <body>
+    @@include('header/index.html')
+    <div class="main">
+      <div class="container main__wrapper">
+        <div class="main__categories">
+          <div class="main__categories-header">
+            <div class="main__title-one">
+              Топ категории
+            </div>
+            <a href="/" class="main__title-two">
+              Все
+            </a>
+          </div>
+          <div class="main__categories-body">
+            @@include('category/index.html', {
+              "name": "Sport",
+              "number": 33,
+              "color": "pink"
+            })
+            @@include('category/index.html', {
+              "name": "Motivation",
+              "number": 28,
+              "color": "blue-ribbon"
+            }) 
+            @@include('category/index.html', {
+              "name": "Animals",
+              "number": 13,
+              "color": "bright-turquoise"
+            })
+            @@include('category/index.html', {
+              "name": "Fairy tale",
+              "number": 3,
+              "color": "orange"
+            })
+          </div>
+        </div>
+        <div class="main__posts">
+          @@include('post/index.html', {
+            "imgUrl": "static/images/profile-logo1.png",
+            "userName": "@dasha_sevostyanova",
+            "postTitle": "Люблю спорт и стараюсь постоянно следить за собой, всем советую тренироваться! Кстати, вчера я сбросила еще 3 кг, еее.",
+            "userPhoto": "static/images/photo-profil.png",
+            "imgLike": "static/images/like.png",
+            "likeNumber": 23,
+            "imgDisike": "static/images/dislike.png",
+            "dislikeNumber": 7,
+            "imgComments": "static/images/comments.png",
+            "commentsNumber": 3
+          })
+          @@include('post/index.html', {
+            "imgUrl": "static/images/profile-logo1.png",
+            "userName": "@dasha_sevostyanova",
+            "postTitle": "Люблю спорт и стараюсь постоянно следить за собой, всем советую тренироваться! Кстати, вчера я сбросила еще 3 кг, еее.",
+            "userPhoto": "static/images/photo-profil.png",
+            "imgLike": "static/images/like.png",
+            "likeNumber": 23,
+            "imgDisike": "static/images/dislike.png",
+            "dislikeNumber": 7,
+            "imgComments": "static/images/comments.png",
+            "commentsNumber": 3
+          })
+        </div>
+        @@include('post-small/index.html', {
+          "userName": "@dasha...",
+          "postTitle": "Прекрасная мышка получилась в этот раз. Как вам, пишите в комменты.",
+          "imgUrl": "static/images/user.png",
+          "userPhoto": "static/images/photo-user1.png",
+          "color": "froly"
+        })
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

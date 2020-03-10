@@ -1,0 +1,45 @@
+.main {
+
+  &__wrapper {
+    display: flex;
+  }
+  &__categories {
+    min-width: 265px;
+    max-height: 261px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  &__categories-header {
+    display: flex;
+  }
+  &__title-one {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  &__title-two {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 36px;
+    color: #000000;
+    margin-left: 19px;
+  }
+
+  &__categories-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    & > a:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

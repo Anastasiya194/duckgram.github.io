@@ -1,0 +1,72 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  margin-top: 50px;
+  margin-left: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+
+  &__user-info {
+    display: flex;
+    align-items: center;
+  }
+  &__user-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &__categories {
+    display: flex;
+    margin-bottom: 20px;
+
+    & > a:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__action-bar {
+    display: flex;
+    margin-left: auto;
+    margin-top: 20px;
+    height: 23px;
+  }
+  
+  &__like {
+    display: flex;
+    margin-right: 20px;
+  }
+  &__img-like {
+    margin-right: 5px;
+  }
+
+  &__dislike {
+    display: flex;
+    margin-right: 20px;
+  }
+  &__img-dislike {
+    margin-right: 5px;
+  }
+
+  &__comments {
+    display: flex;
+  }
+  &__img-comments {
+    margin-right: 5px;
+  }
+  &__number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
