@@ -48,41 +48,95 @@
           </div>
         </div>
         <div class="main__posts">
-          @@include('post/index.html', {
-            "imgUrl": "static/images/profile-logo1.png",
-            "userName": "@dasha_sevostyanova",
-            "postTitle": "Люблю спорт и стараюсь постоянно следить за собой, всем советую тренироваться! Кстати, вчера я сбросила еще 3 кг, еее.",
-            "userPhoto": "static/images/photo-profil.png",
-            "imgLike": "static/images/like.png",
-            "likeNumber": 23,
-            "imgDisike": "static/images/dislike.png",
-            "dislikeNumber": 7,
-            "imgComments": "static/images/comments.png",
-            "commentsNumber": 3
-          })
-          @@include('post/index.html', {
-            "imgUrl": "static/images/profile-logo1.png",
-            "userName": "@dasha_sevostyanova",
-            "postTitle": "Люблю спорт и стараюсь постоянно следить за собой, всем советую тренироваться! Кстати, вчера я сбросила еще 3 кг, еее.",
-            "userPhoto": "static/images/photo-profil.png",
-            "imgLike": "static/images/like.png",
-            "likeNumber": 23,
-            "imgDisike": "static/images/dislike.png",
-            "dislikeNumber": 7,
-            "imgComments": "static/images/comments.png",
-            "commentsNumber": 3
-          })
+          <div class="main__post-one">
+            @@include('post/index.html', {
+              "imgUrl": "static/images/profile-logo1.png",
+              "userName": "@dasha_sevostyanova",
+              "postTitle": "Люблю спорт и стараюсь постоянно следить за собой, всем советую тренироваться! Кстати, вчера я сбросила еще 3 кг, еее.",
+              "userPhoto": "static/images/photo-profil.png",
+              "imgLike": "static/images/like.png",
+              "likeNumber": 23,
+              "imgDislike": "static/images/dislike.png",
+              "dislikeNumber": 7,
+              "imgComments": "static/images/comments.png",
+              "commentsNumber": 3
+            })
+          </div>
+          <div class="main__post-two">
+            @@include('post/index.html', {
+              "imgUrl": "static/images/profile-logo2.png",
+              "userName": "@essaessey",
+              "postTitle": "Сегодня собираюсь на свою любимую работу, так долго ждала когда кончатся выходные, не думала что такое бывает.",
+              "userPhoto": "static/images/photo-profil1.png",
+              "imgLike": "static/images/like.png",
+              "likeNumber": 190,
+              "imgDislike": "static/images/dislike.png",
+              "dislikeNumber": 90,
+              "imgComments": "static/images/comments.png",
+              "commentsNumber": 89
+            })
+          </div>
         </div>
-        @@include('post-small/index.html', {
-          "userName": "@dasha...",
-          "postTitle": "Прекрасная мышка получилась в этот раз. Как вам, пишите в комменты.",
-          "imgUrl": "static/images/user.png",
-          "userPhoto": "static/images/photo-user1.png",
-          "color": "froly"
-        })
+        <div class="main__right-block">
+          <div class="main__posts-small">
+            <div class="main__post-small-one">
+              <div class="main__header">
+                Топ посты
+              </div>
+              @@include('post-small/index.html', {
+                "userName": "@handmade",
+                "postTitle": "Прекрасная мышка получилась в этот раз. Как вам, пишите в комменты.",
+                "imgUrl": "static/images/user.png",
+                "userPhoto": "static/images/photo-user1.png",
+                "color": "froly",
+                "color1": "bright-turquoise"
+              })
+            </div>
+            <div class="main__post-small-two">
+              @@include('post-small/index.html', {
+                "userName": "@prazdnik",
+                "postTitle": "Прошлый год прошёл отлично, надеюсь и этот будет такой-же!",
+                "imgUrl": "static/images/user1.png",
+                "userPhoto": "static/images/photo-user2.png",
+                "color": "purple"
+              })
+            </div>
+          </div>
+          <div class="main__frends">
+            <div class="main__frends-header">
+              <div class="main__frends-title">
+                Мои друзья 
+              </div>
+              <a href="/" class="main__frends-all">
+                Все 
+              </a>
+            </div>
+            @@include('frends/index.html', {
+              "imgUrl": "static/images/profile-logo3.png",
+              "userName": "@ruslan1"
+            })
+            @@include('frends/index.html', {
+              "imgUrl": "static/images/profile-logo2.png",
+              "userName": "@essaessey"
+            })
+            @@include('frends/index.html', {
+              "imgUrl": "static/images/profile-logo1.png",
+              "userName": "@dasha_sev..."
+            })
+            @@include('frends/index.html', {
+              "imgUrl": "static/images/profile-logo4.png",
+              "userName": "@shovrina_nina"
+            })
+          </div>
         </div>
       </div>
     </div>
+    <div class="registration-window">
+      <div class="container">
+        <div class="registration-window__">
+
+        </div>  
+      </div>
   </body>
   <script src="script.js"></script>
 </html>

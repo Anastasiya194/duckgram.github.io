@@ -13,12 +13,6 @@
     font-size: 18px;
     line-height: 30px;
   }
-
-  &__number {
-    margin-left: 10px;
-    @extend .category__title;
-  }
-
   &_color {
     &_orange{
       background-color: #F19E22;
@@ -34,9 +28,6 @@
     }
     &_froly {
       background-color: #EF6A6A;
-    }
-    &_purple {
-      background-color: #A322F1;;
     }
   }
 }

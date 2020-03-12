@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 570px;
-  margin-top: 50px;
-  margin-left: 40px;
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
@@ -12,6 +10,10 @@
   &__user-info {
     display: flex;
     align-items: center;
+  }
+  &__logo {
+    width: 50px;
+    height: 50px;
   }
   &__user-name {
     font-weight: bold;
@@ -44,25 +46,37 @@
   
   &__like {
     display: flex;
+    align-items: center;
     margin-right: 20px;
+    max-width: 41px;
   }
-  &__img-like {
+  &__like-button {
     margin-right: 5px;
+    border: 0;
+    background: transparent;
   }
 
   &__dislike {
     display: flex;
+    align-items: center;
     margin-right: 20px;
+    max-width: 41px;
   }
-  &__img-dislike {
+  &__dislike-button {
     margin-right: 5px;
+    border: 0;
+    background: transparent;
   }
 
   &__comments {
     display: flex;
+    align-items: center;
+    max-width: 41px;
   }
-  &__img-comments {
+  &__comments-button {
     margin-right: 5px;
+    border: 0;
+    background: transparent;
   }
   &__number {
     font-weight: 500;
